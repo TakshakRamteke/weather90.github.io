@@ -127,6 +127,22 @@
       <a href="./s.html"> <p>Natural Disasters</p> </a>
     </div>
 
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        Notification.requestPermission().then((perm) => {
+          if (perm == 'granted') {
+          }
+        });
+      });
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState == 'hidden') {
+          new Notification('This is Current weather', {
+            body: 'Current weather at the following location is x.C ',
+          });
+        }
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

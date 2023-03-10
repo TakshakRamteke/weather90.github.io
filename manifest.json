@@ -3,7 +3,7 @@
   "background_color": "#faf8f7",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://takshakramteke.github.io/weather90.github.io/",
   "name": "Weathaster",
   "short_name": "Weathaster",
   "description": "Weather predicton app",
